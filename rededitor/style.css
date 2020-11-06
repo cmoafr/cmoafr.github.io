@@ -1,15 +1,3 @@
-.selector {
-    width: 100%;
-    height: 100%;
-}
-
-button {
-    border: 1px solid black;
-    margin: 0;
-    padding: 0;
-}
-
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -17,7 +5,7 @@ ul {
 }
 
 li {
-    border: 1px solid black;
+    //border: 1px solid black;
 }
 
 .treelist {
@@ -27,4 +15,52 @@ li {
 
 .active {
     display: block;
+}
+
+
+
+
+
+.hovercontainer {
+    position: relative;
+    margin: 0 0 -3px 0;
+    padding: 0 0 -3px 0;
+}
+
+.hoverbox {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #808080;
+    transition: .5s .5s ease;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hovertext {
+    color: white;
+    padding: 5px;
+}
+
+.hovercontainer:hover .hoverbox {
+    opacity: .25;
+}
+
+
+
+
+
+button {
+    background: none;
+    border: 1px solid black;
+    margin: 0 -1px 0 0;
+    padding: 0;
+}
+
+.selector {
+    width: 100%;
+    height: 100%;
 }
