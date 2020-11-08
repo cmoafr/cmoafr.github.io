@@ -31,7 +31,7 @@ li {
     border-radius: 10px;
     border: 2px solid black;
     background: #808080;
-    transition: .5s .5s ease;
+    transition: .5s .1s ease;
     opacity: 0;
     text-align: center;
     position: absolute;
@@ -41,12 +41,12 @@ li {
 }
 
 .hovertext {
-    color: white;
+    color: black;
     padding: 5px;
 }
 
 .hovercontainer:hover .hoverbox {
-    opacity: .25;
+    opacity: .5;
 }
 
 
@@ -58,9 +58,4 @@ button {
     border: 1px solid black;
     margin: 0 -1px 0 0;
     padding: 0;
-}
-
-.selector {
-    width: 100%;
-    height: 100%;
 }
